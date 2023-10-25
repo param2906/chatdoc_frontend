@@ -1,0 +1,204 @@
+/* Style the input container */
+.container{
+  width: 1000px;
+  height: 700px;
+  /* outline:  1px rgb(245, 243, 243); */
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 250px; */
+}
+
+.container-wrapper {
+  display: flex;
+  align-items: center; 
+  /* justify-content: center; */
+}
+
+.container1 {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  outline:  0px rgb(245, 243, 243);
+  color: white;
+  display: flex;
+  margin: 0 auto ;
+  
+  /* text-align: center; */
+}
+.overflow{
+  /* overflow:auto; */
+  overflow-y:auto;
+  max-height: 500px;
+  max-width: 1000px;
+}
+.chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.question{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 870px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.chatbot{
+  display: flex; 
+  align-items: center;
+  padding: 10px;
+  background-color: #4d4c4c;
+  width: 985px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a 3D effect */
+  border-radius: 10px;
+  font-size:20
+}
+.human{
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center;
+  padding: 10px;
+  width: 985px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a 3D effect */
+  border-radius: 10px
+}
+.button{
+background-color: transparent; /* Remove background color */
+border: none;
+cursor: pointer;
+outline: none;
+padding: 10px;
+margin-bottom: 20px;
+margin-left: 10px;
+}
+.img{
+  display:block; 
+  color: yellow;
+  margin-right: 10px;
+  width: 50px;
+  height:50px;
+  flex-shrink: 0;
+}
+.img1{
+  display: inline-block; 
+  color: rgb(139, 37, 37);/* Make the image display as inline-block */
+  margin-right: 10px;
+  width: 50px;
+  height:50px;
+}
+.chatbot p{
+  display: inline-block; /* Make the paragraph display as inline-block */
+vertical-align: middle;
+}
+
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.h1{
+  text-align: center;
+}
+.input-container {
+    margin: 20px;
+  }
+  
+  /* Style the input field */
+  .input-prompt {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+  }
+  
+  /* Style the input field when focused */
+  .input-prompt:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Style any additional elements or buttons related to the input */
+  .button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the button on hover */
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+.button1{
+    top: 40px;
+    left: 0px;
+    background-color: #D22828;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clearbtn{
+    position: relative;
+    background-color: #D22828;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 20px;
+  }
+  .input-prompt {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive styles for small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+  .container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 10px;
+  }
+  .input-prompt {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+  }
+}

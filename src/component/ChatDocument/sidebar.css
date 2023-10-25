@@ -1,0 +1,143 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    /* overflow-y: hidden; */
+    background: #f7f7f8;
+  }
+  
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Individual item */
+.bm-item {
+    display: inline-block;
+  
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .bm-item:hover {
+    color: #ffffff;
+  }
+
+  .input-prompt {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+}
+
+.bm-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+  margin-top: 50px;
+  width: 200px; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  overflow: auto; /* Enable scrolling */
+  
+}
+
+.item-list {
+  list-style: none; /* Remove bullet points for list items */
+  padding: 0; /* Remove default padding for the list */
+}
+
+.item-list li {
+  padding: 10px; /* Add spacing between list items */
+}
+
+/* Style for the scroll bar (optional) */
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.list-input[readonly]{
+  border: none; /* Remove the border */
+  background-color: transparent; /* Make it transparent */
+  font-size: 16px; /* Adjust the font size */
+  padding: 0; /* Remove padding */
+  outline: none; /* Remove focus outline */
+  width: 100%; /* Set the width to fill its container */
+}
+
+.list-input[readonly]::before {
+  content: '\2022'; /* Use a bullet point or other list marker */
+  margin-right: 5px; /* Add spacing between marker and text */
+}
+.list-input[readonly]:hover {
+  cursor: pointer;
+}

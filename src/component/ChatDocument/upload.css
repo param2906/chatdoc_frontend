@@ -1,0 +1,24 @@
+.inputstyle::file-selector-button {
+        margin-right: 20px;
+        border: none;
+        background: grey;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: background .2s ease-in-out;
+}
+.inputstyle::file-selector-button:hover{
+    background: #0d45a5;
+}
+
+.submit{
+    margin-right: 20px;
+    border: none;
+    background: rgb(12, 41, 138);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}

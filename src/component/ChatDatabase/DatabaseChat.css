@@ -1,0 +1,121 @@
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  .input-prompt {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+  }
+  
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content input {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content input:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #0056b3;}
+
+ /* Reset default select styles */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  color: #3498db;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the custom-select container */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  place-items: center;
+}
+
+/* Style the custom-select arrow */
+.custom-select::after {
+  content: "\f0d7"; /* Unicode for down arrow */
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #3498db;
+}
+
+/* Style the options */
+select option {
+  background-color: #fff;
+  color: #333;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on options */
+select option:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Style the selected option */
+select option:checked {
+  background-color: #3498db;
+  color: #fff;
+}
